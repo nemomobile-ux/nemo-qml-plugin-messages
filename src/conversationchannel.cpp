@@ -97,7 +97,7 @@ void ConversationChannel::accountReadyForChannel(Tp::PendingOperation *op)
 
     Tp::PendingChannelRequest *req = mAccount->ensureTextChat(mRemoteUid,
             QDateTime::currentDateTime(),
-            QLatin1String("org.freedesktop.Telepathy.Client.org.sailfishos.Messages"));
+            QLatin1String("org.freedesktop.Telepathy.Client.qmlmessages"));
     start(req);
 }
 
